@@ -1,0 +1,34 @@
+html {}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 25%;
+    float: left;
+}
+
+.column-4 {
+    width: 33.33%;
+    float: left;
+}
+
+@media screen and (max-width:600px) {
+    .column-2 {
+        width: 100%;
+    }
+    .column-3 {
+        width: 50%;
+    }
+    .column-4 {
+        width: 100%;
+    }
+}
