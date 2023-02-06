@@ -1,34 +1,115 @@
-html {}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column-2 {
-    width: 50%;
-    float: left;
-}
-
-.column-3 {
-    width: 25%;
-    float: left;
-}
-
-.column-4 {
-    width: 33.33%;
-    float: left;
-}
-
-@media screen and (max-width:600px) {
+    html {
+        background-color: #232c31;
+        color: white;
+    }
+    
+    #cover {
+        width: 100%;
+        height: 900px;
+        -webkit-filter: brightness(0.8);
+        filter: brightness(0.8);
+        display: inline-block;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    
+    #titulo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: transparent;
+        font-size: 7vh;
+        text-shadow: 0 0 8px black;
+    }
+    
+    .izq {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+    
+    .izq ul li {
+        text-decoration: none;
+        color: white;
+        font-size: 2vh;
+    }
+    
+    .mid h3 {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .der {}
+    
+    .galeriaimg {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    /* -------------- */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .column-1 {
+        width: 100%;
+        float: left;
+    }
+    
     .column-2 {
-        width: 100%;
-    }
-    .column-3 {
         width: 50%;
+        float: left;
     }
+    
+    .column-3 {
+        width: 33.33%;
+        float: left;
+    }
+    
     .column-4 {
-        width: 100%;
+        width: 25%;
+        float: left;
     }
-}
+    
+    .column-5 {
+        width: 20%;
+        float: left;
+    }
+    
+    .column-6 {
+        width: 16.66%;
+        float: left;
+    }
+    
+    .column-75 {
+        width: 75%;
+        float: left;
+    }
+    
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* -------------- */
+    
+    @media only screen and (max-width: 600px) {
+        /* column-2 pasará de tener 50% a 100% */
+        .column-2 {
+            width: 50%;
+        }
+        /* column-3 pasará de tener 33.33% a 100% */
+        .column-3 {
+            width: 50%;
+        }
+        /* column-4 pasará de tener 25% a 50% */
+        .column-4 {
+            width: 50%;
+        }
+    }
