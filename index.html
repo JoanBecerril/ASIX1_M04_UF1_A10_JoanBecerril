@@ -8,6 +8,15 @@
     <title>Montserrat</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="src/unnamed.png" type="image/x-icon">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="arriba.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,9 +24,12 @@
     <img src="src/2012_Montserrat.jpg" id="cover">
     <h1 id="titulo" class="flex">Turisme a Montserrat</h1>
 
+    <!-- BOTON ARRIBA -->
+    <span class="ir-arriba icon-arrow-up2"></span>
+
     <br>
     <div class="row todo">
-        <div class="column-4 izq">
+        <div class="column-4 izq contenido">
             <ul>
                 <a href="#seccion1">
                     <li>Rutes per Montserrat</li>
@@ -50,10 +62,23 @@
                 <a href="#seccion4">
                     <li>Galería d'imatges</li>
                 </a>
-
                 <a href="#noticies">
                     <li>Notícies</li>
                 </a>
+                <ul>
+                    <a href="#not1">
+                        <li>09-01-23</li>
+                    </a>
+                    <a href="#not2">
+                        <li>02-01-23</li>
+                    </a>
+                    <a href="#not3">
+                        <li>08-11-22</li>
+                    </a>
+                    <a href="#not4">
+                        <li>16-06-22</li>
+                    </a>
+                </ul>
             </ul>
             </ul>
 
@@ -122,23 +147,23 @@
         <div class="column-4 der">
             <h1 id="noticies">Notícies</h1>
             <h4>Tancament dels transports de Montserrat per revisió anual</h4>
-            <h5>09-01-2023</h5>
+            <h5 id="not1">09-01-2023</h5>
             <p>Els transports següents romandran tancats, a causa de les revisions anuals, durant les dates següents:</p>
             <p>- AERI DE MONTSERRAT: Del 9 de gener al 3 de febrer (tots dos inclosos)</p>
             <p>- FUNICULAR DE SANTA COVA: Del 9 al 31 de març. Obert els caps de setmana a partir del 28 de gener. Durant aquests dies la Capella de la Santa Cova estarà oberta en horari d'hivern: de 10.30 ha 15.30 h.</p>
             <p>- FUNICULAR DE SANT JOAN: Del 9 de gener al 24 de març (tots dos inclosos).</p>
             <hr>
             <h4>El Museu de Montserrat tanca per obres del 2 de gener al 28 de febrer</h4>
-            <h5>02-01-2023</h5>
+            <h5 id="not2">02-01-2023</h5>
             <p>El Museu de Montserrat romandrà tancat del 2 de gener al 28 de febrer del 2023. Durant aquest temps es durà a terme la renovació de la climatització de totes les sales de l'exposició permanent i, paral·lelament, també es faran les obres per
                 adequar-ne els nous espais de sota la plaça de Santa Maria per a la futura ampliació del mateix Museu.</p>
             <hr>
             <h4>Absència de l'Escolania</h4>
-            <h5>08-11-2022</h5>
+            <h5 id="not3">08-11-2022</h5>
             <p>L'Escolania no cantarà a Montserrat del 8 al 18 de novembre (tots dos inclosos), a causa d'una gira pels Estats Units.</p>
             <hr>
             <h4>Vacances de l´Escolania de Montserrat</h4>
-            <h5>16-06-2022</h5>
+            <h5 id="not4">16-06-2022</h5>
             <p>L'Escolania de Montserrat no cantarà del 25 de juny al 24 d'agost (tots dos inclosos).</p>
         </div>
     </div>
